@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/francois_one"
+        android:text="Welcome To SummarAIze IT"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="32dp" />
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blog2" />
+
+    <TextView
+        android:layout_below="@+id/pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/francois_one"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:text="CAPTURE OR CHOOSE AN IMAGE FROM YOUR GALLERY"
+
+        />
+
+        <LinearLayout
+            android:id="@+id/linear_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/button_capture"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@color/lightpur"
+                android:text="Capture" />
+
+            <Button
+                android:id="@+id/button_copy"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:background="@color/lightpur"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="Copy Text" />
+
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>
