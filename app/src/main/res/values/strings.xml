@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SummarAIze IT</string>
+    <string name="your_extracted_text">Your Extracted Text</string>
 </resources>

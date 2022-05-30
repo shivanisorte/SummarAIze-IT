@@ -34,7 +34,6 @@ Button button_copy, button_summarize;
 EditText textview_data;
 String scanned_text;
 String extracted;
-String checkcheck;
 
 
     @Override
@@ -52,7 +51,7 @@ String checkcheck;
         textview_data.setText(extracted);
 
 
-        String url = "https://WiltedSplendidSyndrome.shivanisorte.repl.co";
+        String url = "https://extractiveSummary.shivanisorte.repl.co";
 
 
 
@@ -74,7 +73,10 @@ String checkcheck;
                 StringRequest request = new StringRequest(Request.Method.POST, url,
                         new Response.Listener<String>() {
                             public void onResponse(String response) {
-                                textview_data.setText(response);
+                                Intent intent = new Intent(ExtractedtextActivity.this, SummaryActivity.class);
+                                intent.putExtra("summary", response.toString());
+                                startActivity(intent);
+//                                textview_data.setText(response);
                                 Log.e("TAG", "onResponse:dhiosd;hahasdhasdhojasdj;asdj;asdj;o"+response);
 //                        Toast.makeText(ExtractedtextActivity.this, response.d, Toast.LENGTH_SHORT).show();
 
